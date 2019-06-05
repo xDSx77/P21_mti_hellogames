@@ -4,6 +4,6 @@ import retrofit2.Call
 import retrofit2.http.GET
 
 interface WebServiceAPI {
-    @GET("/game/list")
+    @GET("game/list")
     fun listGames() : Call<List<Games>>
 }

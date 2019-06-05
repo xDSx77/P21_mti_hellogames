@@ -9,36 +9,34 @@
         android:id="@+id/frameLayout">
 
     <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" app:srcCompat="@mipmap/ic_launcher"
-            android:id="@+id/Game2"
-            app:layout_constraintStart_toStartOf="@+id/guideline2"
-            app:layout_constraintBottom_toTopOf="@+id/guideline" tools:layout_conversion_absoluteHeight="0dp"
-            tools:layout_editor_absoluteY="0dp" tools:layout_editor_absoluteX="0dp"
-            tools:layout_conversion_absoluteWidth="0dp"/>
-    <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" app:srcCompat="@mipmap/ic_launcher"
-            android:id="@+id/Game4"
-            app:layout_constraintTop_toTopOf="@+id/guideline" app:layout_constraintStart_toStartOf="@+id/guideline2"
-            tools:layout_conversion_absoluteHeight="0dp" tools:layout_editor_absoluteY="0dp"
-            tools:layout_editor_absoluteX="0dp" tools:layout_conversion_absoluteWidth="0dp"/>
-    <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" app:srcCompat="@mipmap/ic_launcher"
+            android:layout_width="150dp"
+            android:layout_height="150dp" app:srcCompat="@mipmap/ic_launcher"
             android:id="@+id/Game1"
             app:layout_constraintEnd_toStartOf="@+id/guideline2"
             app:layout_constraintBottom_toTopOf="@+id/guideline" tools:layout_conversion_absoluteHeight="0dp"
-            tools:layout_editor_absoluteY="0dp" tools:layout_editor_absoluteX="0dp"
-            tools:layout_conversion_absoluteWidth="0dp"/>
+            tools:layout_conversion_absoluteWidth="0dp" android:clickable="true" android:focusable="true"
+    />
     <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" app:srcCompat="@mipmap/ic_launcher"
+            android:layout_width="150dp"
+            android:layout_height="150dp" app:srcCompat="@mipmap/ic_launcher"
+            android:id="@+id/Game2"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintBottom_toTopOf="@+id/guideline" tools:layout_conversion_absoluteHeight="0dp"
+            tools:layout_conversion_absoluteWidth="0dp" android:clickable="true" android:focusable="true"/>
+    <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp" app:srcCompat="@mipmap/ic_launcher"
             android:id="@+id/Game3"
             app:layout_constraintEnd_toStartOf="@+id/guideline2"
             app:layout_constraintTop_toTopOf="@+id/guideline" tools:layout_conversion_absoluteHeight="0dp"
-            tools:layout_editor_absoluteY="0dp" tools:layout_editor_absoluteX="0dp"
-            tools:layout_conversion_absoluteWidth="0dp"/>
+            tools:layout_conversion_absoluteWidth="0dp" android:clickable="true" android:focusable="true"/>
+    <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp" app:srcCompat="@mipmap/ic_launcher"
+            android:id="@+id/Game4"
+            app:layout_constraintTop_toTopOf="@+id/guideline" app:layout_constraintStart_toStartOf="@+id/guideline2"
+            tools:layout_conversion_absoluteHeight="0dp"
+            tools:layout_conversion_absoluteWidth="0dp" android:clickable="true" android:focusable="true"/>
     <androidx.constraintlayout.widget.Guideline
             android:orientation="horizontal"
             android:layout_width="wrap_content"

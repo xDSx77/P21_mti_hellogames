@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   tools:context=".GameFragment" android:layout_marginLeft="8dp"
+                                                   android:layout_marginRight="8dp">
+
+    <TextView
+            android:text="N.A."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/NameValueView" app:layout_constraintStart_toEndOf="@+id/NameView"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
+            app:layout_constraintTop_toTopOf="@+id/NameView"/>
+    <TextView
+            android:text="Type:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/TypeView"
+            app:layout_constraintTop_toBottomOf="@+id/NameView" app:layout_constraintStart_toEndOf="@+id/GameImageView"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp" android:layout_marginTop="8dp"
+            android:textStyle="bold"/>
+    <TextView
+            android:text="Nb players:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/NbPlayersView"
+            app:layout_constraintStart_toEndOf="@+id/GameImageView"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
+            android:textStyle="bold" app:layout_constraintTop_toBottomOf="@+id/TypeView"
+            android:layout_marginTop="8dp"/>
+    <TextView
+            android:text="Game Info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/GameInfoView" app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp" android:layout_marginTop="50dp" app:layout_constraintTop_toTopOf="parent"
+            android:textSize="36sp" android:textColor="#00ADFF" android:textStyle="bold|italic"/>
+    <ImageView
+            android:src="@mipmap/ic_launcher"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/GameImageView" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/GameInfoView"/>
+    <TextView
+            android:text="Name:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/NameView" app:layout_constraintStart_toEndOf="@+id/GameImageView"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp" android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@+id/GameInfoView" android:textStyle="bold"/>
+    <TextView
+            android:text="Year:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/YearView"
+            app:layout_constraintStart_toEndOf="@+id/GameImageView"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
+            android:textStyle="bold" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/NbPlayersView"/>
+    <TextView
+            android:text="N.A."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/TypeValueView" app:layout_constraintStart_toEndOf="@+id/TypeView"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
+            app:layout_constraintTop_toTopOf="@+id/TypeView"/>
+    <TextView
+            android:text="N.A."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/NbPlayersValueView"
+            app:layout_constraintTop_toTopOf="@+id/NbPlayersView"
+            app:layout_constraintStart_toEndOf="@+id/NbPlayersView" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"/>
+    <TextView
+            android:text="N.A."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/YearValueView" app:layout_constraintStart_toEndOf="@+id/YearView"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
+            app:layout_constraintTop_toTopOf="@+id/YearView"/>
+    <TextView
+            android:text="Ut enim quisque sibi plurimum confidit et ut quisque maxime virtute et sapientia sic munitus est, ut nullo egeat suaque omnia in se ipso posita iudicet, ita in amicitiis expetendis colendisque maxime excellit. Quid enim? Africanus indigens mei? Minime hercule! ac ne ego quidem illius; sed ego admiratione quadam virtutis eius, ille vicissim opinione fortasse non nulla, quam de meis moribus habebat, me dilexit; auxit benevolentiam consuetudo. Sed quamquam utilitates multae et magnae consecutae sunt, non sunt tamen ab earum spe causae diligendi profectae."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/DescriptionView" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/GameImageView" android:layout_marginTop="70dp"/>
+    <Button
+            android:text="Do you want to know more ?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/MoreInfoButton" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
