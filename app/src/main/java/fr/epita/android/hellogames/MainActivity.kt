@@ -8,7 +8,6 @@ class MainActivity : AppCompatActivity(), InteractionListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
         supportFragmentManager
             .beginTransaction()
             .replace(R.id.mainContainer, MainFragment())
@@ -23,6 +22,7 @@ class MainActivity : AppCompatActivity(), InteractionListener {
         supportFragmentManager
             .beginTransaction()
             .replace(R.id.mainContainer, gameFragment)
+            .addToBackStack(null)
             .commit()
     }
 }
