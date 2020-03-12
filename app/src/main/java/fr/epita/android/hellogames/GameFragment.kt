@@ -1,5 +1,7 @@
 package fr.epita.android.hellogames
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
@@ -49,6 +51,12 @@ class GameFragment : Fragment() {
                     NbPlayersValueView.text = data!!.players.toString()
                     YearValueView.text = data!!.year.toString()
                     DescriptionView.text = data!!.description_en
+                }
+                MoreInfoButton.setOnClickListener {
+                    val url = data!!.url
+                    val implicitIntent = Intent(Intent.ACTION_VIEW)
+                    implicitIntent.data = Uri.parse(url)
+                    startActivity(implicitIntent)
                 }
             }
         }

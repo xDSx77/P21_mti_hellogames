@@ -62,23 +62,19 @@ class MainFragment : Fragment() {
         }
         service.listGames().enqueue(wsCallback)
 
-        val game1TextView : AppCompatImageView = view.findViewById(R.id.Game1)
-        game1TextView.setOnClickListener {
+        Game1.setOnClickListener {
             (activity as MainActivity).GameClicked(data!![0])
         }
 
-        val game2TextView : AppCompatImageView = view.findViewById(R.id.Game2)
-        game2TextView.setOnClickListener {
+        Game2.setOnClickListener {
             (activity as MainActivity).GameClicked(data!![1])
         }
 
-        val game3TextView : AppCompatImageView = view.findViewById(R.id.Game3)
-        game3TextView.setOnClickListener {
+        Game3.setOnClickListener {
             (activity as MainActivity).GameClicked(data!![2])
         }
 
-        val game4TextView : AppCompatImageView = view.findViewById(R.id.Game4)
-        game4TextView.setOnClickListener {
+        Game4.setOnClickListener {
             (activity as MainActivity).GameClicked(data!![3])
         }
     }
